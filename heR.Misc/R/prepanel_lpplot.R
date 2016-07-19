@@ -1,0 +1,13 @@
+prepanel.lpplot<-
+  function (x, y, groups = NULL, subscripts=NULL, ...) 
+  {
+    
+    # Sets up the x and y limits for a log-probability plot...
+    #  NK  20-November-2015
+      
+      #  x is ignored.....
+    
+    ## !!!! forget this just just qqmath function with the custom...
+    ##  axis function...  and custom panel function....
+      
+  }

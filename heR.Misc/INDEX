@@ -1,0 +1,83 @@
+01.Introduction.to.heR.Misc
+                        An Introduction to the heR.Misc Package
+a2df                    Convert an array to a data frame
+add.lp.bin              Add binned data to a log-probability plot
+add.lp.data             Add raw data to a log-probability plot
+add.lp.lnorm            Add log-normal distribution to a
+                        log-probability plot
+annotate                Annotate Plots with Text and Arrows
+areaplot                Draw Area Under a Curve
+arrayplot               Plot a multi-dimensional array
+avertime                Time Series Statistics for Increasing Averaging
+                        Times
+barchart2               Plot Grouped Data as a Trellis of Barcharts
+bin2lnorm               Fit binned data to a log-normal distribution
+blank.factors           Blank Nested Factors Under Top Levels
+bubbleplot              Create a "bubbleplot"
+bwplot2                 plot a bwplot
+cat.cols                Categorical Colors
+cdf                     Empirical cumulative distribution function
+collapse                Provide index to collapse vector or factor to
+                        nonrepeating elements
+comments                Return Comments of Data Frame Columns
+                        (Variables)
+dapply                  Apply a Function to Dataframe Variables
+data2lnorm              Convert raw data to a log-normal distribution
+distrib                 Create or Sample a Distribution
+fit.ts.empirical        Empirically fit a time series
+fit.ts.sin              Fit a time series with a sum of sines
+freq.tables             Convenient Flat Frequency Tables
+get.time.POSIX          Create Standard Time Variables from Character
+                        Strings
+gm                      Calculate the Geometric Mean
+goodgroups              Identify Contiguous Groups of Non-Missing Data
+gplot2                  Visualize a Graph
+gsd                     Calculate Geometric Standard Deviation
+integrate.curve         Integrate along a curve
+lo                      Create graphics layouts
+log.axis                Add a log-10 Axis to a Plot
+log.tics                Calculate nice tics for log axes
+lpplot                  Create an empty log-probability plot
+lpplot.data             Log-probability plot from raw data
+mond                    Mondrian Plot
+mpr                     Create multiple plots containing line fits
+optgrid                 Optimize a function via grid search
+panel.lsfit             Lattice Panel Function for Linear Least Squares
+                        Fit
+panel.superbar          Lattice Panel Function for Grouped Data
+                        Barcharts
+panel.superpose.2       Trellis panel function to superpose data sets
+peaks                   Locate peaks in a time series
+place.text              Place vector of text and expressions
+plot.fit.ts.emp         Plot an Empirical Time Series Fit
+plot.fit.ts.sin         Plot a Sine Function Time Series Fit
+plot.log                Plot X-Y Data with Nice Log Axes
+plot.stacked.boxes      Plot min, median, max as stacked boxes
+polar.plot              Create a Polar Plot
+prec                    Find the Highest Precision Digit
+prepanel.superbar       Prepanel Lattice Function for Plotting Grouped
+                        Data Barcharts
+print.comments          Print Data Frame Comments
+prob.axis               Probability Axis
+rcdf                    Pick Random Numbers from Empirical Data
+read.fwf.mult           Read Files With Multiple Associated Records in
+                        Fixed Width Format
+rearrange.table         Re-arrange a Summary Statistics Table
+rose                    Plot a Rose Diagram
+rose2                   Plot a Rose Diagram of Magnitude and Direction
+rsquared                Coefficient of Determination (R-Squared)
+runmean                 Calculate Running Statistics
+scoeff                  Normalized Sensitivity Coefficients
+sens                    Sensitivitiy Coefficients
+sin.sum                 Sum of Sines
+spline.colors           Colors Defined by a Spline
+stack.up.data           Convert columns into rows
+stat.tables             Tabular Summary Statistics
+striptext               Annotate a Plot With a Strip of Labels
+sweights                Calculate Stratification Weights
+tablespecs              Table Specifications
+time.factor             Factor a Time Series into Even Interval Groups
+time.segments           Calculate factor indicating time segements
+tkdensity               Tk Kernel Density
+whist                   Weighted Histogram
+xyplot.overlay          Overlaid Trellis XYplots
