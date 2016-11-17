@@ -5063,7 +5063,7 @@ rose2 <- function(dir, mag=NULL, nplumes=16,
 # rose(test, bins=10, rscale=2, labels=TRUE, rings=TRUE, col="cyan", lwd=2)
 #
 
-rose <- function(x, bins=36, rscale=NULL, labels=TRUE, rings=TRUE, ...){
+rose <- function(x, bins=36, rscale=NULL, labels=TRUE, rings=TRUE, shrink=1, ...){
 
  ### Ensure that this is directional data (0-360)
  if (max(x) > 360 || min(x) < 0) {
@@ -5090,8 +5090,10 @@ rose <- function(x, bins=36, rscale=NULL, labels=TRUE, rings=TRUE, ...){
  plotLimits <- c(-max(rscale), max(rscale)) * 1.04
 
  plot(0,0,
-  ylim=plotLimits,
-  xlim=plotLimits,
+#  ylim=plotLimits,
+      ylim=c(-1,1),
+#  xlim=plotLimits,
+      xlim=c(-1,1),
   axes=FALSE,
   xlab="",
   ylab="")
@@ -5121,11 +5123,15 @@ rose <- function(x, bins=36, rscale=NULL, labels=TRUE, rings=TRUE, ...){
  x1 <- h
  y1 <- k
 
- x2 <- (magnitude * cos(start)) + h
- y2 <- (magnitude * sin(start)) + k
-
- x3 <- (magnitude * cos(stop)) + h
- y3 <- (magnitude * sin(stop)) + k
+# x2 <- (magnitude * cos(start)) + h
+ x2 <- (shrink * magnitude * cos(start)) + h
+# y2 <- (magnitude * sin(start)) + k
+ y2 <- (shrink * magnitude * sin(start)) + k
+ 
+# x3 <- (magnitude * cos(stop)) + h
+ x3 <- (shrink * magnitude * cos(stop)) + h
+# y3 <- (magnitude * sin(stop)) + k
+ x3 <- (shrink * magnitude * sin(stop)) + k
 
  # build pie slice
  x <- c(x1, x2, x3, x1)
@@ -5159,9 +5165,11 @@ rose <- function(x, bins=36, rscale=NULL, labels=TRUE, rings=TRUE, ...){
      theta <- 360 - pieMid[top10] + 90 # compass to polar angles
      theta <- theta * pi/180 # degrees to rads
 
-     x <- pieFreq[top10] * cos(theta)
-     y <- pieFreq[top10] * sin(theta)
-
+#     x <- pieFreq[top10] * cos(theta)
+     x <- pieFreq[top10] * cos(theta) * shrink
+#     y <- pieFreq[top10] * sin(theta)
+     y <- pieFreq[top10] * sin(theta) * shrink
+     
      text(x, y, format(pieFreq[top10], digits=2))
 
      ### Reset the par
